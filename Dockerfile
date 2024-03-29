@@ -1,10 +1,11 @@
 FROM ubuntu:18.04
 
-RUN apt update && \
+RUN dpkg --add-architecture i386 && \
+    apt update && \
     apt upgrade -y && \
     apt install -y \
 	curl \
-	libgtk2.0-0 \
+	libgtk2.0-0:i386 \
 	lzma \
 	xz-utils
 
