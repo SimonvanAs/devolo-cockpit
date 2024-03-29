@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM jlesage/baseimage-gui
 
 RUN dpkg --add-architecture i386 && \
     apt update && \
