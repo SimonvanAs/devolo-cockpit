@@ -1,4 +1,4 @@
-FROM jlesage/baseimage-gui
+FROM jlesage/baseimage-gui:alpine-3.19-v4.5.3
 
 RUN dpkg --add-architecture i386 && \
     apt update && \
